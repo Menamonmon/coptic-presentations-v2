@@ -1,0 +1,48 @@
+.navbar {
+    display: inline-block;
+    --nav-height: 7vh;
+    background: var(--primary-bg-clr);
+    height: 100vh;
+    width: fit-content;
+}
+
+.hamburger-btn {
+    height: var(--nav-height);
+    width: var(--nav-height);
+    background: var(--secondary-bg-clr);
+    margin: 5px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: space-between;
+    flex-direction: column;
+}
+
+.hamburger-btn:hover {
+    cursor: pointer;
+    filter: brightness(1.5);
+}
+
+.line {
+    height: calc(var(--nav-height) * .1);
+    width: calc(var(--nav-height) * .65);
+    background: var(--primary-txt-clr);
+    margin: calc(var(--nav-height) * .05) 0;   
+}
+
+.nav-list {
+    position: absolute;
+    left: -1000%;
+    display: inline-block;
+    width: 40vw;
+    min-width: 200px;
+    max-width: 250px;
+    background: inherit;
+}
+
+.nav-list.open {
+    left: 0;
+    position: relative;
+}
+

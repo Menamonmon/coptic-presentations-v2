@@ -1,0 +1,22 @@
+.dd-nav-item .nav-item {
+    display: none;
+}
+
+.dd-nav-item.open .nav-item {
+    display: block;
+    border-radius: 5;
+    border: 0;
+    background: var(--third-bg-clr);
+}
+
+.dd-nav-item .nav-item:hover {
+    filter: brightness(.5);
+}
+
+.dd-nav-item.open {
+    filter: none;
+}
+
+.dd-nav-item-arrow {
+    float: right;
+}
